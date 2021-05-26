@@ -65,6 +65,7 @@ firstData.forEach(data => {
 
   cardSingle.append(accountDiv, followerDiv, dateDiv);
   socialMediaStatsContainer.append(cardSingle);
+  console.log(socialMediaStatsContainer);
 });
 
 const overviewOfTodayContainer = document.querySelector('.card2');
@@ -128,10 +129,11 @@ const overviewDatas = [
   },
 ];
 
-overviewDatas.forEach(item => {
+overviewDatas.forEach(overviewData => {
   // container for all
   const cardOverview = document.createElement('div');
   cardOverview.classList.add('card__overview');
+ 
 
   // first container
   const cardView = document.createElement('div');
@@ -160,5 +162,8 @@ overviewDatas.forEach(item => {
   cardDate.append(cardDateImg, cardDateParag);
   cardSocialMedia.append(cardImg, cardDate);
   // console.log(cardSocialMedia);
-  overviewOfTodayContainer.append(cardSocialMedia);
+
+  cardOverview.append(cardView, cardSocialMedia);
+  overviewOfTodayContainer.append(cardOverview);
+  console.log(overviewOfTodayContainer);
 })
