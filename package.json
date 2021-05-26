@@ -1,0 +1,16 @@
+{
+  "name": "clipboard-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch sass/main.scss css/style.css",
+    "devserver": "live-server --browser=firefox"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "sass": "^1.32.12"
+  }
+}
