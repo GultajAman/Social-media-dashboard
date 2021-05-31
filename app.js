@@ -214,4 +214,4 @@ overviewDatas.forEach(overviewData => {
 // })
 
 const setTimeToday = document.querySelector('.heading-overview');
-setTimeToday.textContent = new Date().toDateStringString()
+setTimeToday.textContent = new Date().toDateString()
